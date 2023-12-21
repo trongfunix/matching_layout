@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main_matching {
+  width: 43.75rem;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: Roboto;
+  border: 2px solid #d7d7d7;
+}
+
+.question_matching_content {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3744;
+  margin-bottom: 0.25rem;
+}
+
+.sub_question_matching_content {
+  padding: 0 2rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #576f8a;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.content_title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  background-color: #e6e6e8;
+  text-align: center;
+}
+
+.content_title_desc {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.content_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  grid-gap: 0 2rem;
+  grid-template-areas: "left right";
+}
+
+.left_content {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #2c3744;
+}
+
+.right_content {
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.right_content::before {
+  --width_stick: 0.0625rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  width: var(--width_stick);
+  height: 100%;
+  background-color: #d9d9d9;
+  transform: translateX(-50%);
+}
+
+.right_content_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0.5rem 1rem 0.5rem 0.25rem;
+  color: #fff;
+  background-color: #007ae6;
+  border-radius: 6px;
+  border: solid 1px #007ae6;
+  cursor: grab;
+  transition: all 0.3s ease-in-out;
+
+  /* New logic */
+  user-select: none;
+}
+
+.right_content_item:hover {
+  background-color: #025dae;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.main_content .content_container:nth-child(even) {
+  background-color: #f6f6f7;
+}

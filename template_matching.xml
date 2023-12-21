@@ -1,0 +1,25 @@
+
+<matchingresponse>
+<h3 question_matching="True" >Câu hỏi</h3>
+<p sub_question_matching="True" >Sub question</p>
+
+  <matchingcontent>
+
+      <itemgroup title="True">
+        <item>Title 1</item>
+        <item>Title 2</item>
+      </itemgroup>
+
+      <itemgroup >
+        <item left="left1">Content 1</item>
+        <item right="right1">Sub_content 1</item>
+      </itemgroup>
+
+      <itemgroup >
+        <item left="left2">Content 2</item>
+        <item right="right2">Sub_content 2</item>
+      </itemgroup>
+  
+  </matchingcontent>
+
+</matchingresponse>
