@@ -52,8 +52,7 @@
 .content_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  justify-items: start;
+  justify-items: stretch;
   grid-gap: 0 2rem;
   grid-template-areas: "left right";
 }
@@ -82,7 +81,7 @@
   transform: translateX(-50%);
 }
 
-.right_content_item {
+.right_content_item .btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -100,7 +99,7 @@
   user-select: none;
 }
 
-.right_content_item:hover {
+.right_content_item .btn:hover {
   background-color: #025dae;
 }
 
